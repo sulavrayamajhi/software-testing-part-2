@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 mocha"
+    "coverage": "c8 mocha",
+    "coverage-report": "c8 mocha 'test/add.test.js' 'test/capitalize.test.js' 'test/ceil.test.js' 'test/compact.test.js' 'test/countby.test.js' 'test/divide.test.js' 'test/divide.test.js' 'test/filter.test.js' 'test/isDate.test.js' 'test/map.test.js' 'test/toNumber.test.js'"
   },
   "author": "",
   "license": "MIT",
