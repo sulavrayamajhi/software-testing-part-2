@@ -12,6 +12,6 @@ describe("Add", () => {
     });
 
     it("add one positive number with a negative number", () => {
-        expect(add(-3,-4)).to.equal(-7)
+        expect(add(5,-7)).to.equal(-2)
     });
 })
