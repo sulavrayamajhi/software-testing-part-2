@@ -4,7 +4,7 @@ const expect = chai.expect;
 
 describe("Divide", () => {
     it("Divide two positive numbers", () =>{
-        expect(divide(5,100)).to.equal(20)
+        expect(divide(100,5)).to.equal(20)
     });
     it("Divide positive number by negative number", () => {
         expect(divide(8,-2)).to.equal(-4)
