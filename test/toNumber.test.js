@@ -10,13 +10,16 @@ describe("toNumber", () => {
         expect(toNumber('2021-11-12')).to.be.NaN
     });
     it("Returns NaN if symbol is passed", () =>{
-        expect(toNumber('+')).to.be.NaN
+        expect(toNumber(Symbol('+'))).to.be.NaN
     });
     it("Returns the NaN if object is passed", () =>{
         expect(toNumber({number: 1})).to.be.NaN
     });
     it("Returns number if number is passed", () => {
         expect(toNumber(4)).to.equal(4)
+    });
+    it("Returns 0 if null is passed", () => {
+        expect(toNumber(null)).to.equal(0)
     });
     it("Returns infinite if infinity is passed", () => {
         expect(toNumber(Infinity)).to.equal(Infinity)
