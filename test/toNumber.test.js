@@ -10,7 +10,7 @@ describe("toNumber", () => {
         expect(toNumber('2021-11-12')).to.be.NaN
     });
     it("Returns NaN if symbol is passed", () =>{
-        expect(toNumber(Symbol('+'))).to.be.NaN
+        expect(toNumber(Symbol('test'))).to.be.NaN
     });
     it("Returns the NaN if object is passed", () =>{
         expect(toNumber({number: 1})).to.be.NaN
