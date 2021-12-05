@@ -8,8 +8,18 @@ describe("Map - Iterates over the elements to create a new array", () => {
 
         const inputArray = [4, 8];
         const expectedArray = [16, 64];
-        expect(map(inputArray, square)).to.deep.equal(expectedArray)
+        expect(map(inputArray, square)).to.deep.equal(expectedArray);
         expect(map(inputArray, square)).to.be.an('array');
+    })
+
+    it('When the null value is passed as parameter it should return an empty array', () => {
+        const square = n => n*n;
+        const inputArray = null;
+        const expectedArray = [];
+
+        expect(map(inputArray, square)).to.deep.equal(expectedArray);
+        expect(map(inputArray, square)).to.be.an('array');
+
     })
    
 })
